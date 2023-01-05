@@ -1,15 +1,12 @@
-package com.example.webpageparserapi.service;
+package com.example.webpageparserapi.service.impl;
 
 import com.example.webpageparserapi.dto.external.ApiCharacterDto;
 import com.example.webpageparserapi.dto.external.ApiResponseDto;
 import com.example.webpageparserapi.dto.mapper.MovieCharacterMapper;
 import com.example.webpageparserapi.model.MovieCharacter;
 import com.example.webpageparserapi.repository.MovieCharacterRepository;
-import lombok.extern.log4j.Log4j2;
-import org.springframework.scheduling.annotation.Scheduled;
-import org.springframework.stereotype.Service;
-
-import javax.annotation.PostConstruct;
+import com.example.webpageparserapi.service.MovieCharacterService;
+import com.example.webpageparserapi.service.client.HttpClient;
 import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.List;
@@ -17,6 +14,10 @@ import java.util.Map;
 import java.util.Set;
 import java.util.function.Function;
 import java.util.stream.Collectors;
+import javax.annotation.PostConstruct;
+import lombok.extern.log4j.Log4j2;
+import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.stereotype.Service;
 
 @Log4j2
 @Service

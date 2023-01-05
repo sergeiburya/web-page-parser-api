@@ -4,13 +4,12 @@ import com.example.webpageparserapi.dto.CharacterResponseDto;
 import com.example.webpageparserapi.dto.mapper.MovieCharacterMapper;
 import com.example.webpageparserapi.model.MovieCharacter;
 import com.example.webpageparserapi.service.MovieCharacterService;
+import java.util.List;
+import java.util.stream.Collectors;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
-import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/movie-character")

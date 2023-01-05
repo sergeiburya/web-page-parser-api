@@ -1,7 +1,7 @@
 package com.example.webpageparserapi.controller;
 
 import com.example.webpageparserapi.model.MovieCharacter;
-import com.example.webpageparserapi.service.DemoHttpClient;
+import com.example.webpageparserapi.service.client.DemoHttpClient;
 import com.example.webpageparserapi.util.ConstApp;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

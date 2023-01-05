@@ -1,0 +1,16 @@
+databaseChangeLog:
+  - changeSet:
+      id: add-external-id-column-movie-character-table
+      author: Serhii_Buria
+      changes:
+        - addColumn:
+            schemaName: public
+            tableName: movie_character
+            columns:
+              - column:
+                  name: external_id
+                  type: bigint
+      rollback:
+        - dropTable:
+            schemaName: public
+            tableName: movie_character

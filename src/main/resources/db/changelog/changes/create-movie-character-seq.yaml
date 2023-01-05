@@ -1,0 +1,25 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-movie-character-sequence-id
+      author: Serhii_Buria
+      changes:
+        - createSequence:
+            schemaName: public
+            sequenceName: movie_character_id_seq
+            incrementBy: 1
+            startValue: 1
+            minValue: 1
+      rollback:
+        - dropSequence:
+            schemaName: public
+            sequenceName: movie_character_id_seq
+
+
+
+
+
+
+
+
+
+
